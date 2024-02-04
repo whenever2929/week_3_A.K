@@ -25,9 +25,13 @@ print(name[::-1].upper())
 # split and join
 line = 'root::0:0:superuser:/root:/bin/sh'
 elems = line.split(':')
-
+print(elems)
+# replacing the value at index 0 in elems to avatar
 elems[0] = 'avatar'
+# replacing the value at index 4 with the below sentence
 elems[4] = 'The super-user (zero)'
+print(elems)
+# joining each value within elems with a ':'
 line = ':'.join(elems)
 print(line)
 
@@ -47,7 +51,7 @@ suffix = ['st', 'nd', 'rd', 'th']
 n = 1
 s = f"{str(n+1) + suffix[n]} of {len(names)} is {names[n]}"
 print(s)
-
+# list of items
 food = ['Pizza', 'Doughnuts', 'Salad', 'Fruit']
 description = ['tasty', 'delicious', 'horrible', 'full']
 
@@ -60,7 +64,7 @@ sentence = ', '.join(food)
 print(f"I ate {sentence}")
 
 # string formatting
-
+# dictionary - albums includes key and value pair
 albums = { 'Debut': 2006,
                  'Fearless': 2008,
                  'Speak now': 2010,
@@ -69,6 +73,8 @@ albums = { 'Debut': 2006,
                  'Reputation': 2017,
                  'Lover':2019
 }
-m
+# index - ie the number of each album starting at 1 and looking at enumerating over the key
 for index, key in enumerate(albums.keys(),1):
+    # right justified 5 digits, key is uppercase right justified 12 characters,
+    # years in the key are right justified 5digs
     print(f"{index:5d} {key.upper():>12s} {albums[key]:5d}")
