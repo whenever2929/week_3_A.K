@@ -69,6 +69,6 @@ albums = { 'Debut': 2006,
                  'Reputation': 2017,
                  'Lover':2019
 }
-
+m
 for index, key in enumerate(albums.keys(),1):
     print(f"{index:5d} {key.upper():>12s} {albums[key]:5d}")
