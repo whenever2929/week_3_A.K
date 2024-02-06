@@ -1,11 +1,10 @@
 #!/usr/bin/python
-
 Belgium = 'Belgium,10445852,Brussels,737966,Europe,1830,Euro,Catholicism,Dutch,French,German'
-print(type(Belgium))
+# print(type(Belgium))
 # 1. Printing a line of hyphens using len function to get the length of string Belgium
 print('-' * len(Belgium))
 # 2. using the replace method to change the separator from , to :
-print(Belgium.replace(",",":"))
+# print(Belgium.replace(",",":"))
 # or using the splitting of the string to create a list
 population = Belgium.split(',')
 print(population)
@@ -21,3 +20,4 @@ total = int(population[1]) + int(population[3])
 # using the f string to print the outcome from the variable total in the sentence
 print(f"The population of Belgium is {total}")
 
+print(Belgium.index(''))

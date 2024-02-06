@@ -4,8 +4,8 @@ Belgium = 'Belgium,10445852,Brussels,737966,Europe,1830,Euro,Catholicism,Dutch,F
 # Ihave made the information into a dictionary
 print(Belgium)
 location = {
-            "Belgium": 10445852,
-            "Brussels": 737966,
+            "Belgium": '10445852',
+            "Brussels": '737966',
             "Europe": 1830
            }
 print(Belgium.replace(",", ":"))
@@ -20,6 +20,9 @@ print(size*'-')
 # a=location['Belgium']
 # print(location['Brussels'])
 # b= location['Brussels']
-
+belgian_population = location['Belgium']
+print(belgian_population)
 total = int(location.get('Belgium')) + int(location.get('Brussels'))
 print(total)
+
+print(int(location["Belgium"])+int(location["Brussels"]))
